@@ -1,4 +1,4 @@
-# Java Track – Rocketseat
+# Java Track
 
 ![Project Status Badge](https://img.shields.io/badge/course-in--progress-blue)
 
