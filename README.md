@@ -4,11 +4,7 @@
 
 This repository contains all the projects, code examples, and exercises developed during the **Java track** from [Rocketseat](https://rocketseat.com.br/). Each stage of the journey is organized into individual modules under the `modules` package, providing a clear structure for studying and reviewing the content.
 
-## 📚 Table of Contents
-
-- [Course Description](#course-description)
-- [Repository Structure](#repository-structure)
-- [Technologies Used](#technologies-used)
+[![My Skills](https://skillicons.dev/icons?i=java,spring,postgresql,docker,maven)](https://skillicons.dev)
 
 ---
 
