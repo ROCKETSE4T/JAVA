@@ -1,5 +1,7 @@
 package modules.modules1.dataTypes;
 
+import modules.modules1.variables.Variables;
+
 public class DataTypes {
     // ===============================
     // Tipos primitivos (tipos padrões do JAVA)
@@ -41,4 +43,10 @@ public class DataTypes {
 
     Integer integerObject = 5; // autoboxing (int → Integer)
     int primitiveInteger = integerObject; // unboxing (Integer → int)
+
+
+
+    public static void main(String[] args) {
+        System.out.println();
+    }
 }

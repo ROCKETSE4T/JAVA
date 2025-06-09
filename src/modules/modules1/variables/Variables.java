@@ -45,9 +45,4 @@ public class Variables {
         System.out.println("Shadowed var: " + classLevelVariable); // 20
         System.out.println("Original class var: " + this.classLevelVariable); // 10
     }
-
-    public static void main(String[] args) {
-        Variables v = new Variables();
-        v.exampleMethodScope(42);
-    }
 }

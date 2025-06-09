@@ -1,4 +1,4 @@
-package modules.modules1;
+package modules.modules1.strings;
 
 public class Strings {
 
