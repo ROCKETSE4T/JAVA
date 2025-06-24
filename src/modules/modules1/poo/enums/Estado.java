@@ -1,4 +1,4 @@
-package modules.modules1.enums;
+package modules.modules1.poo.enums;
 
 // ===============================
 // Enum
