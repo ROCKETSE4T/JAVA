@@ -11,6 +11,12 @@ public class Poo {
         //Instância da classe Student;
         Student estudante1 = new Student("Enzo", 21);
         estudante1.estudar();
+        System.out.println(Student.qtdAlunos);
+        estudante1.qtdAlunos = 10;
+        System.out.println(estudante1.qtdAlunos);
+        System.out.println(Student.qtdAlunos);
+
+
     }
 }
 

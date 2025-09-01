@@ -28,7 +28,6 @@ public class BasicExceptions {
         // Todas as checked exceptions são subclasses de Exception, mas não de RuntimeException.
         //
         // Exemplos comuns: FileNotFoundException, IOException, SQLException
-
         try {
             java.io.FileReader fr = new java.io.FileReader("arquivo.txt");
         } catch (java.io.FileNotFoundException e) {
