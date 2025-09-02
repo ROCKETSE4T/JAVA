@@ -16,6 +16,7 @@ class Cliente {
     private String nome;
     private int idade;
     private Estado estado;
+
     public Cliente(String nome, int idade, Estado estado){
         this.nome = nome;
         this.idade = idade;
