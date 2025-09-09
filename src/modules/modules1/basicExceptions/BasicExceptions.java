@@ -17,40 +17,50 @@ public class BasicExceptions {
 
     public static void main(String[] args) {
 
-        // Checked Exceptions
+        // ======== Checked Exceptions ========
         // São exceções que o compilador verifica em tempo de compilação.
         // Ou seja, o javac exige que o código trate essas exceções com try-catch
         // ou que as propague com throws. Caso contrário, a compilação falha.
-        //
-        // Embora o erro só possa ocorrer em tempo de execução (ex: abrir um arquivo que não existe),
-        // o compilador exige que o código esteja preparado para lidar com ele.
-        //
         // Todas as checked exceptions são subclasses de Exception, mas não de RuntimeException.
-        //
-        // Exemplos comuns: FileNotFoundException, IOException, SQLException
+        // Necessário tratar pois extende a Exception
         try {
-            java.io.FileReader fr = new java.io.FileReader("arquivo.txt");
-        } catch (java.io.FileNotFoundException e) {
-            System.out.println("Arquivo não encontrado.");
+            checkMyCheckedException("Sergio pauzao");
+            System.out.println("Entrou!");
+        } catch (MinhaCheckedException e) {
+            e.printStackTrace();
+        }catch (Exception e) {
+            e.printStackTrace();
         }
 
-        // Unchecked Exceptions (Runtime Exceptions)
+
+        // ======== Unchecked Exceptions  =========
         // São exceções que o compilador NÃO exige que sejam tratadas.
         // São subclasses de RuntimeException.
         // Geralmente indicam erros de lógica ou problemas inesperados em tempo de execução,
-        // como acessar uma variável nula ou fazer uma divisão por zero.
-        //
-        // Exemplos: NullPointerException, ArithmeticException, ArrayIndexOutOfBoundsException
+        // Náo é necessário tratar pois extende a Exception
 
-        String nome = null;
-        System.out.println(nome.length()); // lança NullPointerException em tempo de execução
+        checkMyRunTimeException("enzo");
 
-        // Error
-        // Representa erros graves que normalmente não devem (ou não podem) ser tratados.
-        // Ex: StackOverflowError, OutOfMemoryError, etc.
+    }
 
-        // throw e throws
-        // - throw: usado para lançar uma exceção manualmente
-        // - throws: usado para declarar que um método pode lançar uma exceção
+
+
+    protected static void checkMyRunTimeException(String name) throws MinhaUncheckedException {
+        if(!name.equalsIgnoreCase("Enzo")){
+            throw new MinhaUncheckedException();
+        }
+        System.out.println("Bem vindo!");
+    }
+
+    protected static void checkMyCheckedException(String name) throws MinhaCheckedException, Exception {
+        if (name.equalsIgnoreCase("Sergio pauzao")) {
+            throw  new Exception("Respeito!");
+        }
+
+        if(!name.equalsIgnoreCase("Enzo")){
+            throw new MinhaCheckedException();
+        }
+
+
     }
 }
