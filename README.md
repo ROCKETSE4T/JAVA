@@ -28,5 +28,7 @@ This repository is organized by modules under the `modules/` package:
 | Module     | Topics Covered                                              |
 |------------|-------------------------------------------------------------|
 | Module 1   | Java fundamentals, variables, conditionals, loops, OOP      |
+| Module 2   | Java Collections, HashTable, HashMap, ArrayList...          |
+
 | ...        | *More modules to be added as the course progresses*         |
 
